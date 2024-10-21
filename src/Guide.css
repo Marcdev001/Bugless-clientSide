@@ -1,0 +1,135 @@
+.guide-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .guide-container h2 {
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .guide-steps {
+    list-style-type: none;
+    counter-reset: step-counter;
+    padding-left: 0;
+  }
+  
+  .guide-steps li {
+    counter-increment: step-counter;
+    margin-bottom: 2rem;
+    padding-left: 3rem;
+    position: relative;
+  }
+  
+  .guide-steps li::before {
+    content: counter(step-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    background-color: #ffd700;
+    color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+  }
+  
+  .guide-steps h3 {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .guide-steps p, .guide-steps ul {
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .guide-steps ul {
+    padding-left: 1.5rem;
+    margin-top: 0.5rem;
+  }
+  
+  .guide-steps ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+  }
+  
+  .guide-steps ul li::before {
+    content: none;
+  }
+
+
+  .footer {
+    bottom: 0;
+    text-align: center;
+   width: 100%;
+    
+    
+  }
+
+  .footer h4 {
+    margin-bottom: 1rem;
+  }
+  .footer-link {
+    color: #000;
+    
+  }
+
+  .footer-link:hover {
+    color: #ffd700;
+  }
+
+  .footer-link:active {
+    color: #e6c301;
+  }
+  @media  screen and (max-width: 768px) {
+    .footer-link {
+        color: #000;
+        padding: 7px;
+      }
+  }
+  .copyright {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 7rem;
+    
+  }
+
+  .knowledgebase,
+  .faqs,
+  .feedback,
+  .terms,
+  .contact,
+  .about,
+  .testimonials,
+  .guide,
+  .privacy {
+    margin-top: 10px;
+  }
+
+  .media-icon:hover {
+    color: #ffd700;
+  }
+  .media-icon {
+    margin-top: 3px;
+    font-size: 1.5rem;
+  }
+

@@ -1,0 +1,361 @@
+body {
+    padding: 1.5rem;
+}
+.home {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 6rem;
+    }
+}
+
+.logo-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+@media screen and (min-width: 768px) {
+    .logo-2 {
+        font-size: 8rem;
+    }
+}
+
+.text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45vh;
+    text-align: center; /* Center align the text */
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    
+  }
+  
+  .text {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    text-align: center;
+    width: 70%;
+    
+  }
+  
+  .visible {
+    opacity: 1;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
+ @media screen and (min-width: 768px) {
+    .text-container {
+        font-size: 4rem;
+        font-weight: bold;
+        text-align: center;
+        padding: 1.5rem;
+
+        
+    }
+
+    .text {
+        width: 70%;
+    }
+}
+
+ 
+
+.authenticated-content-container {
+  display: none; /* Hide the container by default */
+  opacity: 0; /* Initially hide the authenticated content */
+  transition: opacity 0.5s ease; /* Smooth fade-in transition */
+}
+
+.authenticated-content-container.visible {
+  display: block; /* Show the container when the visible class is applied */
+  opacity: 1; /* Show the authenticated content when visible class is applied */
+}
+
+.authenticateUser {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #0a0a0a;
+}
+
+@media  screen and (min-width: 768px) {
+    .authenticateUser {
+        margin-top: 5rem;
+    }
+}
+
+.userAuthenticated {
+    color: #00000085; 
+}
+
+.section-2 {
+    border: 1px solid #ffd700;
+    background-color: #ffd700;
+    padding: 10px;
+    border-radius: 3px;
+    width: 30%;
+    position: relative;
+    z-index: 0;
+    margin-bottom: 5rem;
+    
+    
+}
+.section-2 h2 {
+    color: #000; 
+    text-align: center;
+}
+
+.section-2:hover {
+    background-color: #e6c301;
+}
+@media  screen and (min-width: 200px) and (max-width: 768px) {
+    .section-2 {
+        width: 50%;
+    }
+}
+
+.icon-1 {
+    color: #000;
+    font-size: 2rem;
+}
+
+.trial-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+    
+}
+
+@media  screen and (max-width: 343px) {
+    .trial-about {
+        display: grid;
+        text-align: center;
+        gap: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 5rem;
+    }
+
+    .Link-color {
+        display: flex;
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 900px) {
+    .trial-about {
+        margin-top: 10rem;
+        
+    }
+}
+
+.Link-color {
+    border: 1px solid #ffd700;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ffd700;
+    
+}
+.Link-color:hover {
+    background-color: #e6c301;
+}
+.Link-color {
+    color: #000;
+}
+
+
+.bugless-features h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.bugless-features h5 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #00000085;
+}
+
+.bugless-features-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+
+.bugless-features h3 {
+    margin-top: 1rem;
+}
+
+.bugless-features-items p {
+    margin-top: 15px;
+}
+
+@media  screen and (max-width: 600px) {
+    .bugless-features-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+.bug-features-icon {
+    font-size: 2rem;
+    color: #ffd700;
+}
+
+.supported-langs-icon {
+    font-size: 3rem;
+    padding: 3rem;
+    
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 5rem;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 1rem;
+
+
+  }
+
+
+  .content h1 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ffd700;
+  }
+  
+  .error-identification {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  .error-identification p {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .error-identification h1 {
+    padding-right: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .error-identification-icon {
+    color: #ffd700;
+    font-size: 2rem;
+  }
+
+  .guideline {
+    padding: 1rem;
+    margin-top: 4rem;
+  }
+
+  .guideline p {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .guideline h1 {
+    padding-right: 4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .guideline-icon {
+    color: #ffd700;
+    font-size: 2rem;
+  }
+
+  .twitting {
+    background-color: #000;
+    color: #ffffff;
+    padding: 1rem;
+    margin-bottom: 7rem;
+  }
+
+  .twitting p {
+    margin-top: 2rem;
+  }
+
+  .footer {
+    bottom: 0;
+    text-align: center;
+   width: 100%;
+    
+    
+  }
+
+  .footer h4 {
+    margin-bottom: 1rem;
+  }
+  .footer-link {
+    color: #000;
+    
+  }
+
+  .footer-link:hover {
+    color: #ffd700;
+  }
+
+  .footer-link:active {
+    color: #e6c301;
+  }
+  @media  screen and (max-width: 768px) {
+    .footer-link {
+        color: #000;
+        padding: 7px;
+      }
+  }
+  .copyright {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 7rem;
+    
+  }
+
+  .knowledgebase,
+  .faqs,
+  .feedback,
+  .terms,
+  .contact,
+  .about,
+  .testimonials,
+  .guide,
+  .privacy {
+    margin-top: 10px;
+  }
+
+  .media-icon:hover {
+    color: #ffd700;
+  }
+  .media-icon {
+    margin-top: 3px;
+    font-size: 1.5rem;
+  }
+

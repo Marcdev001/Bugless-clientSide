@@ -1,0 +1,96 @@
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    margin-bottom: 2rem;
+  }
+  
+  .auth-button {
+    background-color: #ffd700;
+    color: #333;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-button:hover {
+    background-color: #ffcc00;
+  }
+  
+  .auth-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 215, 0, 0.5);
+  }
+
+
+  .footer h4 {
+    margin-bottom: 1rem;
+  }
+  .footer-link {
+    color: #000;
+    
+  }
+
+  .footer-link:hover {
+    color: #ffd700;
+  }
+
+  .footer-link:active {
+    color: #e6c301;
+  }
+  @media  screen and (max-width: 768px) {
+    .footer-link {
+        color: #000;
+        padding: 7px;
+      }
+  }
+  .copyright {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 7rem;
+    
+  }
+
+  .knowledgebase,
+  .faqs,
+  .feedback,
+  .terms,
+  .contact,
+  .about,
+  .testimonials,
+  .guide,
+  .privacy {
+    margin-top: 10px;
+  }
+
+  .media-icon:hover {
+    color: #ffd700;
+  }
+  .media-icon {
+    margin-top: 3px;
+    font-size: 1.5rem;
+  }
+

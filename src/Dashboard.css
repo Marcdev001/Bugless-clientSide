@@ -1,0 +1,327 @@
+.dashboard-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dashboard-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-info {
+  text-align: center;
+}
+
+.user-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+
+.user-email {
+  font-size: 14px;
+  color: #666;
+}
+
+@media screen and (min-width: 768px) {
+  .dashboard-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .dashboard-header h1 {
+    margin-bottom: 0;
+  }
+
+  .user-profile {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .user-avatar {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+
+  .user-info {
+    text-align: right;
+  }
+
+  .user-name {
+    font-size: 14px;
+  }
+
+  .user-email {
+    font-size: 12px;
+  }
+}
+
+
+
+.dashboard {
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.dashboard-header h1 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.user-info {
+  text-align: right;
+}
+
+.user-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.user-email {
+  font-size: 12px;
+  color: #666;
+}
+
+.upload-section {
+  margin-top: 30px;
+}
+
+.upload-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.file-input-container {
+  margin-bottom: 15px;
+}
+
+.file-input-container label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.file-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #ffd700;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #ffcc00;
+}
+
+.submit-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #ff0000;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.analysis-results {
+  margin-top: 40px;
+}
+
+.analysis-results h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.no-results {
+  color: #666;
+  font-size: 14px;
+}
+
+.result-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.result-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.result-section {
+  margin-bottom: 20px;
+}
+
+.result-section h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.result-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.result-section li {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.location {
+  color: #666;
+  font-size: 12px;
+}
+
+.smell-type {
+  font-weight: 500;
+}
+
+.suggestion {
+  color: #ffd700;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+
+.footer h4 {
+  margin-bottom: 1rem;
+}
+.footer-link {
+  color: #000;
+  
+}
+
+.footer-link:hover {
+  color: #ffd700;
+}
+
+.footer-link:active {
+  color: #e6c301;
+}
+@media  screen and (max-width: 768px) {
+  .footer-link {
+      color: #000;
+      padding: 7px;
+    }
+}
+.copyright {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 7rem;
+  
+}
+
+.knowledgebase,
+.faqs,
+.feedback,
+.terms,
+.contact,
+.about,
+.testimonials,
+.guide,
+.privacy {
+  margin-top: 10px;
+}
+
+.media-icon:hover {
+  color: #ffd700;
+}
+.media-icon {
+  margin-top: 3px;
+  font-size: 1.5rem;
+}
+
