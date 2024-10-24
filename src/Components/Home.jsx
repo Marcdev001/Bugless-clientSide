@@ -219,7 +219,7 @@ optimal performance.
 
       {/* error-identification */}
       <div className="error-identification">
-        <h1>Precise Error Identification!</h1>
+        <h1>Precise Error Identification</h1>
         <p>
           <p>
             At Bugless, we prioritize the accuracy and efficiency of error
