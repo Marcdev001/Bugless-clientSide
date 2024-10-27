@@ -29,6 +29,7 @@ export default function Dashboard() {
     try {
       const response = await axios.post('https://bugless-server.onrender.com/api/analyze', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
+        withCredentials: true,
       });
       setAnalysisResults(response.data.analysisResults);
     } catch (error) {
@@ -181,6 +182,7 @@ export default function Dashboard() {
 
 
 
+
 /* import React, { useState } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from "react-router-dom";
@@ -210,14 +212,13 @@ export default function Dashboard() {
     files.forEach((file) => formData.append('files', file));
 
     try {
-      const response = await axios.post('https://localhost:5000/api/analyze', formData, {
+      const response = await axios.post('https://bugless-server.onrender.com/api/analyze', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       setAnalysisResults(response.data.analysisResults);
     } catch (error) {
       console.error('Error uploading files:', error);
-      console.error('Error response:', error.response);
-      setError(error.response?.data?.error || 'An error occurred while uploading files');
+      setError('An error occurred while uploading files. Please check your network connection and try again.');
     } finally {
       setUploading(false);
     }
@@ -321,60 +322,46 @@ export default function Dashboard() {
         </div>
       </div>
 
-
       <footer className="footer">
         <div className="footer-links">
           <div>
-
             <h4>Bugless solution</h4>
             <div className='knowledgebase'>
-              <Link to="/knowledgebase" className="footer-link ">Knowledge Base</Link>
+              <Link to="/knowledgebase" className="footer-link ">Knowledge Base</Link>
             </div>
-
             <div className='feedback'>
-              <Link to="/feedback" className="footer-link ">Feedback</Link>
+              <Link to="/feedback" className="footer-link ">Feedback</Link>
             </div>
-            
             <div className='terms'>
-              <Link to="/terms" className="footer-link ">Terms and Conditions</Link>
+              <Link to="/terms" className="footer-link ">Terms and Conditions</Link>
             </div>
-
             <div className='privacy'>
-              <Link to="/privacy" className="footer-link ">Privacy Policy</Link>
+              <Link to="/privacy" className="footer-link ">Privacy Policy</Link>
             </div>
-
           </div>
-
           <div>
             <h4>Company</h4>
             <div className='knowledgebase'>
-              <Link to="/contact" className="footer-link ">Contact Us</Link>
+              <Link to="/contact" className="footer-link ">Contact Us</Link>
             </div>
-
             <div className='feedback'>
-              <Link to="/about" className="footer-link ">About Us</Link>
+              <Link to="/about" className="footer-link ">About Us</Link>
             </div>
-            
             <div className='terms'>
-              <Link to="/testimonials" className="footer-link ">User Testimonials</Link>
+              <Link to="/testimonials" className="footer-link ">User Testimonials</Link>
             </div>
-
           </div>
-          
           <div>
             <h4>Media</h4>
             <div><i className="fa-brands fa-twitter media-icon"></i></div>
             <div><i className="fa-brands fa-facebook media-icon"></i></div>
-
           </div>
         </div>
-
         <div className='copyright'>&copy; 2024 BUGLESS. All Right Reserved.</div>
       </footer>
     </div>
   );
 }
-
 
 
 
