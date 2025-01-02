@@ -11,7 +11,7 @@ const ContactUs = () => {
       const formData = new FormData(e.target);
 
       // Fetch API to submit form data to backend server
-      const response = await fetch('https://bugless-proxy-server.onrender.com/submit-form', {
+      const response = await fetch('https://localhost:5001/submit-form', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
