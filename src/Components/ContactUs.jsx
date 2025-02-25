@@ -108,7 +108,7 @@ const ContactUs = () => {
           </div>
         </div>
 
-        <div className='copyright'>&copy; 2024 BUGLESS. All Right Reserved.</div>
+        <div className='copyright'>&copy; 2025 BUGLESS. All Right Reserved.</div>
       </footer>
     </div>
 

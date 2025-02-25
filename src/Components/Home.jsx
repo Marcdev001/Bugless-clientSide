@@ -208,7 +208,7 @@ optimal performance.
               <i class="fa-brands fa-angular supported-langs-icon"></i>
             </div>
             <div>
-              <i class="fa-brands fa-python supported-langs-icon"></i>
+              <i class="fab fa-node-js supported-langs-icon"></i>
             </div>
             <div>
               <i class="fa-solid fa-code supported-langs-icon"></i>
@@ -343,7 +343,7 @@ optimal performance.
         </div>
 
         <div className="copyright">
-          &copy; 2024 BUGLESS. All Right Reserved.
+          &copy; 2025 BUGLESS. All Right Reserved.
         </div>
       </footer>
     </div>

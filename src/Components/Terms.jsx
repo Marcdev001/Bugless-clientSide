@@ -180,7 +180,7 @@ const Terms = () => {
         </div>
 
         <div className="copyright">
-          &copy; 2024 BUGLESS. All Right Reserved.
+          &copy; 2025 BUGLESS. All Right Reserved.
         </div>
       </footer>
     </div>
