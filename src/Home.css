@@ -41,6 +41,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Add a general style for paragraphs */
+p {
+  color: #444;
+}
+
 /* Smooth scroll animation for elements */
 .scroll-reveal {
   opacity: 0;
@@ -586,5 +591,12 @@ h1, h2, h3, h4, h5, h6 {
 
 @media screen and (max-width: 480px) {
   /* Add styles for smaller screens if needed */
+}
+
+/* Override paragraph color for specific sections that need white text */
+.text-container p,
+.container p,
+.twitting p {
+  color: #fff;
 }
 

@@ -1,0 +1,106 @@
+.about {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  font-family: var(--font-body);
+  animation: fadeIn 1s ease-out;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about h1 {
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  color: #0a0a0a;
+  background: linear-gradient(to right, #0a0a0a, #ffd700);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about h4 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0a0a0a;
+}
+
+.about p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 1.5rem;
+  max-width: 800px;
+}
+
+.about-join {
+  margin-top: 4rem !important;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .about {
+    padding: 2rem 1.5rem;
+  }
+
+  .about h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about h4 {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about {
+    padding: 1.5rem 1rem;
+  }
+
+  .about h1 {
+    font-size: 1.8rem;
+  }
+
+  .about h4 {
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+  }
+
+  .about p {
+    font-size: 0.95rem;
+  }
+}
+
+/* Footer styles specific to About page */
+.about .footer {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about .footer-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
