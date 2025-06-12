@@ -44,15 +44,23 @@ const Home = () => {
     <div className="section-1">
       <TextFader texts={texts} duration={duration} />
 
+      {/* Open Source Banner */}
+      <div className="open-source-banner">
+        <p>
+          Bugless is an open-source project dedicated to improving code quality
+          for developers worldwide.
+        </p>
+      </div>
+
       {/* addressing users about the web app */}
       <p>
-      Bugless is a sophisticated web application designed to streamline code
-analysis for innovation, offering a comprehensive suite of features
-to enhance your development process. With Bugless, developers have
-access to advanced code quality assessment and detailed
-performance metrics analysis. Our platform empowers developers to
-pinpoint and resolve issues swiftly, ensuring codebase stability and
-optimal performance.
+        Bugless is a sophisticated web application designed to streamline code
+        analysis for innovation, offering a comprehensive suite of features
+        to enhance your development process. With Bugless, developers have
+        access to advanced code quality assessment and detailed
+        performance metrics analysis. Our platform empowers developers to
+        pinpoint and resolve issues swiftly, ensuring codebase stability and
+        optimal performance.
         <p>
           Elevate your development process with Bugless, an indispensable
           companion for modern software development.
@@ -277,7 +285,15 @@ optimal performance.
           <i className="fa-brands fa-twitter fa-beat bug-features-icon"></i>
         </div>
         <p>
-        At Bugless, we provide reliable code analysis tools for developers of all levels. Our platform offers accurate feedback, helping you identify and fix bugs efficiently. With cutting-edge algorithms, we ensure high-level accuracy in code analysis. Our user-friendly interface integrates seamlessly into your workflow, allowing you to focus on creating exceptional software. From detailed code reviews to proactive bug detection, Bugless elevates your coding practices. Join thousands of developers who trust us for their code analysis needs. Experience cleaner, more efficient code with Bugless by your side.
+          At Bugless, we provide reliable code analysis tools for developers of
+          all levels. Our platform offers accurate feedback, helping you identify
+          and fix bugs efficiently. With cutting-edge algorithms, we ensure
+          high-level accuracy in code analysis. Our user-friendly interface
+          integrates seamlessly into your workflow, allowing you to focus on
+          creating exceptional software. From detailed code reviews to proactive
+          bug detection, Bugless elevates your coding practices. Join thousands
+          of developers who trust us for their code analysis needs. Experience
+          cleaner, more efficient code with Bugless by your side.
         </p>
       </div>
 

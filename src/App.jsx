@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './Navbar';
@@ -18,6 +18,34 @@ import ProjectDetails from './Components/ProjectDetails';
 import Guide from './Components/Guide';
 
 function App() {
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all elements with scroll-reveal class
+    document.querySelectorAll('.scroll-reveal, .bugless-features-items > div').forEach((element) => {
+      observer.observe(element);
+    });
+
+    // Cleanup
+    return () => {
+      document.querySelectorAll('.scroll-reveal, .bugless-features-items > div').forEach((element) => {
+        observer.unobserve(element);
+      });
+    };
+  }, []);
+
   return (
     <Router>
       <div className="App">
